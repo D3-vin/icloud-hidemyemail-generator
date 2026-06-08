@@ -1,0 +1,53 @@
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+hidemyemail
+
+# Go workspace file
+go.work
+
+# Environment files
+.env
+.env.local
+
+# Cookies
+cookies.txt
+
+# Generated emails and results
+generated/
+results/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+
+# Python (old version)
+old/
+**/__pycache__
+venv/
+.venv/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+
+# Windows resource files (auto-generated)
+rsrc_windows_*.syso
+
+# Build directory and scripts
+build/
+build.cmd
+
+# Kiro specs (internal)
+.kiro/

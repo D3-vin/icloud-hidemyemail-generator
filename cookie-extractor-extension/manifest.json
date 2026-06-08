@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "iCloud Cookie Extractor",
+  "version": "1.0",
+  "description": "Extract iCloud cookies for HideMyEmail Generator",
+  "permissions": [
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://*.icloud.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Extract iCloud Cookies"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

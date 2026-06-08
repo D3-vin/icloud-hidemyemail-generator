@@ -1,0 +1,68 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    name: Build Release
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+      
+      - name: Build for all platforms
+        run: |
+          # Windows AMD64
+          GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o build/hidemyemail-windows-amd64.exe .
+          
+          # Linux AMD64
+          GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o build/hidemyemail-linux-amd64 .
+          
+          # macOS AMD64 (Intel)
+          GOOS=darwin GOARCH=amd64 go build -ldflags="-s -w" -o build/hidemyemail-macos-amd64 .
+          
+          # macOS ARM64 (Apple Silicon)
+          GOOS=darwin GOARCH=arm64 go build -ldflags="-s -w" -o build/hidemyemail-macos-arm64 .
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            build/hidemyemail-windows-amd64.exe
+            build/hidemyemail-linux-amd64
+            build/hidemyemail-macos-amd64
+            build/hidemyemail-macos-arm64
+          body: |
+            ## iCloud Generator Release
+            
+            ### Downloads
+            - **Windows (64-bit)**: `hidemyemail-windows-amd64.exe`
+            - **Linux (64-bit)**: `hidemyemail-linux-amd64`
+            - **macOS Intel**: `hidemyemail-macos-amd64`
+            - **macOS Apple Silicon**: `hidemyemail-macos-arm64`
+            
+            ### Installation
+            1. Download the binary for your platform
+            2. Make it executable (Linux/macOS): `chmod +x hidemyemail-*`
+            3. Run: `./hidemyemail-*` or `hidemyemail-*.exe`
+            
+            ### What's New
+            - ✅ Interactive menu
+            - ✅ Auto-numbering labels
+            - ✅ Save to `generated/` folder
+            - ✅ Sequential generation with delays
+            - ✅ Timestamp conversion
+            - ✅ Chrome Extension for cookie extraction
+            
+            See [README.md](https://github.com/D3-vin/icloud-hidemyemail-generator#readme) for full documentation.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
