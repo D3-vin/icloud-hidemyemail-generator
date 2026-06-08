@@ -51,3 +51,6 @@ build.cmd
 
 # Kiro specs (internal)
 .kiro/
+
+# Telegram posts (private)
+TELEGRAM_POST.md
