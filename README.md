@@ -12,7 +12,7 @@ Fast and efficient CLI tool for generating iCloud Hide My Email addresses with T
 
 ## Features
 
-- 🚀 **Fast** - Native Go performance (5x faster than Python)
+- 🚀 **Fast** - Native Go performance
 - 🔒 **Secure** - TLS fingerprinting with Chrome 146 profile
 - 📊 **Interactive Menu** - Easy-to-use interface
 - 🎯 **Auto-numbering** - Automatically number labels (test1, test2, test3...)
