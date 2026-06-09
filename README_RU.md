@@ -1,10 +1,14 @@
 # 📧 iCloud HideMyEmail Generator
 
-Быстрый и эффективный CLI инструмент для генерации iCloud Hide My Email адресов с TLS fingerprinting.
+CLI инструмент с интерактивным меню для генерации iCloud Hide My Email адресов с TLS fingerprinting.
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/D3-vin/icloud-hidemyemail-generator/releases)
 [![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://go.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+[![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-blue?logo=telegram)](https://t.me/D3_vin)
+[![Telegram Chat](https://img.shields.io/badge/Telegram-Chat-blue?logo=telegram)](https://t.me/D3vin_chat)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/D3-vin/icloud-hidemyemail-generator)
 
 [English](README.md) | [Русский](#русский)
 

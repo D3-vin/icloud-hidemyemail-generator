@@ -1,10 +1,16 @@
 # 📧 iCloud HideMyEmail Generator
 
-Fast and efficient CLI tool for generating iCloud Hide My Email addresses with TLS fingerprinting.
+CLI tool with interactive menu for generating iCloud Hide My Email addresses with TLS fingerprinting.
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/D3-vin/icloud-hidemyemail-generator/releases)
 [![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://go.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+[![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-blue?logo=telegram)](https://t.me/D3_vin)
+[![Telegram Chat](https://img.shields.io/badge/Telegram-Chat-blue?logo=telegram)](https://t.me/D3vin_chat)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/D3-vin/icloud-hidemyemail-generator)
+
+[Features](#features) • [Quick Start](#quick-start) • [Usage](#usage) • [Building](#building) • [Contact](#contact)
 
 [English](#english) | [Русский](README_RU.md)
 
@@ -230,7 +236,7 @@ iCloud limits generation to **~5 emails per 30 minutes per family member**. Wait
 
 ---
 
-## Links
+## Contact
 
 - **GitHub**: https://github.com/D3-vin/icloud-hidemyemail-generator
 - **Telegram**: [@D3_vin](https://t.me/D3_vin)
