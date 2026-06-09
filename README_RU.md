@@ -230,14 +230,6 @@ iCloud ограничивает генерацию до **~5 email каждые 
 
 ---
 
-## Благодарности
-
-- **TLS Client**: [bogdanfinn/tls-client](https://github.com/bogdanfinn/tls-client)
-- **CLI Framework**: [spf13/cobra](https://github.com/spf13/cobra)
-- **Terminal UI**: [pterm/pterm](https://github.com/pterm/pterm)
-
----
-
 ## Ссылки
 
 - **GitHub**: https://github.com/D3-vin/icloud-hidemyemail-generator

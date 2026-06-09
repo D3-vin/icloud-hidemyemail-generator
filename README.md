@@ -230,14 +230,6 @@ iCloud limits generation to **~5 emails per 30 minutes per family member**. Wait
 
 ---
 
-## Credits
-
-- **TLS Client**: [bogdanfinn/tls-client](https://github.com/bogdanfinn/tls-client)
-- **CLI Framework**: [spf13/cobra](https://github.com/spf13/cobra)
-- **Terminal UI**: [pterm/pterm](https://github.com/pterm/pterm)
-
----
-
 ## Links
 
 - **GitHub**: https://github.com/D3-vin/icloud-hidemyemail-generator
