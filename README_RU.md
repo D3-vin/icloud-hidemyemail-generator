@@ -1,6 +1,6 @@
 # 📧 iCloud HideMyEmail Generator
 
-CLI инструмент с интерактивным меню для генерации iCloud Hide My Email адресов с TLS fingerprinting.
+CLI инструмент с интерактивным меню для создания алиасов iCloud «Hide My Email» из вашей собственной подписки iCloud — без захода на сайт.
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/D3-vin/icloud-hidemyemail-generator/releases)
 [![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://go.dev/)
@@ -17,7 +17,7 @@ CLI инструмент с интерактивным меню для гене�
 ## Возможности
 
 - 🚀 **Быстро** - Производительность Go
-- 🔒 **Безопасно** - TLS fingerprinting с профилем Chrome 146
+- 🔒 **Браузерный клиент** - TLS-профиль Chrome 146 для совместимости с API iCloud
 - 📊 **Интерактивное меню** - Простой интерфейс
 - 🎯 **Авто-нумерация** - Автоматическая нумерация меток (test1, test2, test3...)
 - 📁 **Организованный вывод** - Созданные email → `generated/`, результаты списка → `results/`
@@ -244,8 +244,10 @@ iCloud ограничивает генерацию до **~5 email каждые 
 
 ## Лицензия
 
-MIT License - см. файл [LICENSE](LICENSE)
+MIT License — см. файл [LICENSE](LICENSE)
 
----
+## ⚠️ Отказ от ответственности
 
-**⚠️ Дисклеймер**: Этот инструмент только для образовательных целей. Используйте на свой риск.
+ПО предоставляется **исключительно в образовательных целях**, «как есть» (AS IS), без каких-либо гарантий. Инструмент лишь автоматизирует официальную функцию «Hide My Email», доступную в вашей собственной платной подписке iCloud+, — действуют все лимиты и правила Apple. Используйте в соответствии с условиями сервиса Apple. Автор не несёт ответственности за любое использование и последствия. Не аффилировано с Apple.
+
+> This software is provided for educational purposes only, "AS IS". The author is not responsible for any misuse.
